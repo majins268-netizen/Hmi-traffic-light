@@ -1,1 +1,13 @@
-bruh
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Simulator Lampu Lalu Lintas</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body><main>
+<h1>VICE <span>CITY</span> TRAFFIC</h1>
+<div class="cv"><canvas id="c"></canvas></div>
+<div class="row st"><div><small>FASE</small><b id="ph">-</b></div><div><small>SISA</small><b id="rm">0</b></div><div><small>MOBIL</small><b id="cn">0</b></div></div>
+<div class="pn row" style="margin-top:10px"><div class="sg">
+<label>Kepadatan<select id="sd"><option value=".08">Sepi</option><option value=".16" selected>Sedang</option><option value=".3">Padat</option></select></label>
+<label>Kecepatan mobil<select id="ss"><option value="1">1x</option><option value="2">2x</option><option value="3">3x</option></select></label>
+<label>Koneksi<span id="lk" class="lk off">GATEWAY: TERPUTUS</span></label></div></div>
+</main><script src="script.js"></script></body></html>
