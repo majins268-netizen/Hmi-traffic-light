@@ -1,0 +1,17 @@
+{
+  "name": "traffic-light-vice-city",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Two-lane Vice City traffic HMI with Node.js Virtual PLC and WebSocket",
+  "main": "app.js",
+  "scripts": {
+    "start": "concurrently -k \"node plc.js\" \"node app.js\"",
+    "plc": "node plc.js",
+    "server": "node app.js"
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "express": "^5.1.0",
+    "ws": "^8.18.3"
+  }
+}
