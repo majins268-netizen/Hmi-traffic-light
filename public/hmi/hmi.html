@@ -1,1 +1,16 @@
-s
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>HMI Lampu Lalu Lintas</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body><main>
+<h1>HMI <span>LAMPU</span> LALU LINTAS</h1>
+<div class="pn hmi"><div class="hh"><span>PANEL OPERATOR</span><span id="lk" class="lk off">GATEWAY: TERPUTUS</span></div>
+<div class="lamps"><div><small>UTARA–SELATAN</small><svg viewBox="0 0 44 108"><rect x="2" y="2" width="40" height="104" rx="10" fill="#0b0b14" stroke="#3a3a55" stroke-width="2"/><circle id="l0RED" cx="22" cy="22" r="13" fill="#ff2d4d"/><circle id="l0YELLOW" cx="22" cy="54" r="13" fill="#ffc400"/><circle id="l0GREEN" cx="22" cy="86" r="13" fill="#22ff9a"/></svg></div><div><small>TIMUR–BARAT</small><svg viewBox="0 0 44 108"><rect x="2" y="2" width="40" height="104" rx="10" fill="#0b0b14" stroke="#3a3a55" stroke-width="2"/><circle id="l1RED" cx="22" cy="22" r="13" fill="#ff2d4d"/><circle id="l1YELLOW" cx="22" cy="54" r="13" fill="#ffc400"/><circle id="l1GREEN" cx="22" cy="86" r="13" fill="#22ff9a"/></svg></div></div>
+<div class="info" id="info">Siaga • Semua Merah</div>
+<div class="b4"><button class="g" id="b1">START</button><button class="r" id="b2">STOP</button><button class="a" id="b5">AUTO</button><button class="e" id="b3">DARURAT</button></div></div>
+<div class="pn row" style="margin-top:10px"><div class="sg">
+<label>Hijau (dtk)<input id="sg" type="number" value="12" min="1" max="300"></label>
+<label>Kuning (dtk)<input id="sy" type="number" value="3" min="1" max="60"></label>
+<label>All-red (dtk)<input id="sr" type="number" value="2" min="1" max="10"></label></div>
+<button class="ap" id="b4">TERAPKAN</button></div>
+</main><script src="script.js"></script></body></html>
